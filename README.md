@@ -13,7 +13,6 @@ The application is built using **Flask**, **SQLAlchemy**, and **Bootstrap**, pro
 - **Animal Tracking**: Add animals individually or in bulk, assign them to experimental groups, and track their health status (e.g., "Sacrifice" for dead animals).
 - **Schedule Management**: Create schedules for interventions, measurements, and observations with calendar integration.
 - **Real-Time Updates**: Dynamic updates when changes are made to experiments or animals.
-- **Collaboration**: Add team members to the project and assign different roles (e.g., Admin, Observer).
 
 ## Requirements
 
@@ -32,7 +31,7 @@ pip install -r requirements.txt
 ### Steps to Install
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/in-vivo-organizer.git
+   git clone https://github.com/AdiBarnoor/in-vivo-organizer.git
    cd in-vivo-organizer
 
    ```
