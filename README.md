@@ -29,11 +29,6 @@ By offering an intuitive interface, robust features, and customizability, this t
    - Role-based access for team members.
    - Task assignment and notifications for upcoming milestones.
 
-### Advanced Features
-- **AI Integration**: Outcome predictions and anomaly detection.
-- **Mobile and Cloud Support**: Access and sync data on the go.
-- **Compliance Tools**: Generate ethical approval reports and ensure adherence to the 3R principles.
-
 ---
 
 ## Installation
@@ -81,38 +76,3 @@ By offering an intuitive interface, robust features, and customizability, this t
    - Record observations and measurements.
    - Generate graphs and reports for analysis and presentation.
 
----
-
-## Contributing
-We welcome contributions to make this tool even better. To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add a feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Submit a pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-Special thanks to the research community for inspiring this tool and providing feedback to improve it.
-
----
-
-## Contact
-For questions, feedback, or support, please reach out:
-- Email: yourname@example.com
-- GitHub: [yourusername](https://github.com/yourusername)
