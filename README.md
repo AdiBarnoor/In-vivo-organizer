@@ -17,10 +17,10 @@ The application is built using **Flask**, **SQLAlchemy**, and **Bootstrap**, pro
 
 ## Requirements
 
-- Python 3.6+ (Python 3.13 is currently not fully supported)
-- Flask
-- Flask-SQLAlchemy
-- Bootstrap (for styling)
+- `Python 3.6+` (Python 3.13 is currently not fully supported)
+- `Flask`
+- `Flask-SQLAlchemy`
+- `Bootstrap` (for styling)
 
 You can install the required dependencies using the following:
 
