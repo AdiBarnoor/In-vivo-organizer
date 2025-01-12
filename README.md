@@ -1,62 +1,65 @@
-# In Vivo Experiment Organizer
+# In Vivo Organizer
 
-## Introduction
-The **In Vivo Experiment Organizer** is a Python-based tool designed to help researchers streamline the planning, execution, and management of in vivo experiments. It simplifies the organization of experimental groups, animal management, treatment tracking, and data collection, while ensuring compliance with ethical guidelines.
+## Overview
 
-By offering an intuitive interface, robust features, and customizability, this tool is tailored to meet the needs of research labs working on complex experiments involving live animals.
+The **In Vivo Organizer** is a web-based application designed to assist researchers in managing their animal experiments. The tool provides a dynamic dashboard, experiment planning, animal tracking, and schedule management. It allows researchers to set up new experiments, track animals, manage their health status, and visualize experiment timelines. 
 
----
+The application is built using **Flask**, **SQLAlchemy**, and **Bootstrap**, providing a simple yet effective interface for managing animal experiments.
 
 ## Features
 
-### Core Features
-1. **Experiment Setup and Planning**
-   - Pre-built templates for common in vivo study designs.
-   - Customizable experimental groups, variables, and timelines.
-2. **Animal Management**
-   - Comprehensive animal inventory with details like species, strain, and weight.
-   - Randomization tools to reduce bias.
-   - Health and welfare logs for monitoring well-being.
-3. **Intervention Tracking**
-   - Record treatment details (dosage, route, timing).
-   - Environmental condition tracking (temperature, light cycles).
-   - Behavioral and physiological observation logs.
-4. **Data Collection and Reporting**
-   - Real-time data entry and analysis.
-   - Visualizations like growth curves and survival plots.
-   - Export reports in `.csv`, `.xlsx`, or `.pdf` formats.
-5. **Collaboration and Notifications**
-   - Role-based access for team members.
-   - Task assignment and notifications for upcoming milestones.
+- **Dynamic Dashboard**: A live view of ongoing experiments, groups, and timelines with real-time updates.
+- **Experiment Planning**: Set up new experiments with groups, treatments, and timelines. Includes metadata like species, animal ID, treatments, etc.
+- **Animal Tracking**: Add animals individually or in bulk, assign them to experimental groups, and track their health status (e.g., "Sacrifice" for dead animals).
+- **Schedule Management**: Create schedules for interventions, measurements, and observations with calendar integration.
+- **Real-Time Updates**: Dynamic updates when changes are made to experiments or animals.
+- **Collaboration**: Add team members to the project and assign different roles (e.g., Admin, Observer).
 
+## Requirements
+
+- Python 3.6+ (Python 3.13 is currently not fully supported)
+- Flask
+- Flask-SQLAlchemy
+- Bootstrap (for styling)
+
+You can install the required dependencies using the following:
+
+```bash
+pip install -r requirements.txt
+```
 ---
 
-## Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- Required Python libraries:
-  - `pandas`
-  - `openpyxl`
-  - `tkinter` (comes pre-installed with Python on most platforms)
-
 ### Steps to Install
-1. Clone the repository:
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/facs-in-vivo-organizer.git
-   cd facs-in-vivo-organizer
+   git clone https://github.com/your-username/in-vivo-organizer.git
+   cd in-vivo-organizer
+
    ```
 
 2. Install dependencies:
    ```bash
-   pip install pandas openpyxl
+   pip install -r requirements.txt
    ```
-
-3. Run the application:
+   
+3. Set Up the Database:
+   The project uses SQLAlchemy to manage the database. You'll need to initialize the database before running the app.
+   In your terminal, run:
+   ```
+   from app import db
+   db.create_all()  # This will create the necessary tables in the database
+   ```
+   
+4. Run the application:
    ```bash
    python organizer.py
    ```
 
+5. Access the Web Application
+   Open your browser and go to the following address:
+   ```
+   http://127.0.0.1:5000
+   ```
 ---
 
 ## Usage
