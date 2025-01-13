@@ -18,7 +18,6 @@ The application is built using **Flask**, **SQLAlchemy**, and **Bootstrap**, pro
 
 - `Python 3.6+` (Python 3.13 is currently not fully supported)
 - `Flask`
-- `Flask-SQLAlchemy`
 - `Bootstrap` (for styling)
 
 You can install the required dependencies using the following:
@@ -41,20 +40,13 @@ pip install -r requirements.txt
    pip install -r requirements.txt
    ```
    
-3. Set Up the Database:
-   The project uses SQLAlchemy to manage the database. You'll need to initialize the database before running the app.
-   In your terminal, run:
-   ```
-   from app import db
-   db.create_all()  # This will create the necessary tables in the database
-   ```
-   
-4. Run the application:
+3. Run the application:
    ```bash
-   python organizer.py
+   python app.py
    ```
+This will start a Flask development server on `http://127.0.0.1:5000/`.
 
-5. Access the Web Application
+4. Access the Web Application
    Open your browser and go to the following address:
    ```
    http://127.0.0.1:5000
@@ -64,7 +56,7 @@ pip install -r requirements.txt
 ## Usage
 
 1. **Start the Program**
-   Run the script to open the GUI application.
+   Run the script to start the application.
 
 2. **Plan Your Experiment**
    - Define experimental groups and variables.
@@ -78,3 +70,9 @@ pip install -r requirements.txt
    - Record observations and measurements.
    - Generate graphs and reports for analysis and presentation.
 
+---
+
+## Technology Stack
+- **Backend:** `Python`, `Flask`
+- **FrontEnd:** `HTML`, `CSS`, `Bootstrap4`
+- **Database:** `JSON`
