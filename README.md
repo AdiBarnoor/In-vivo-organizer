@@ -2,9 +2,8 @@
 
 ## Overview
 
-The **In Vivo Organizer** is a web-based application designed to assist researchers in managing their animal experiments. The tool provides a dynamic dashboard, experiment planning, animal tracking, and schedule management. It allows researchers to set up new experiments, track animals, manage their health status, and visualize experiment timelines. 
+The **In Vivo Organizer** is a web-based application designed to assist researchers in managing their animal experiments. The tool provides a dynamic dashboard, experiment planning, animal tracking, and schedule management. It allows researchers to set up new experiments, track animals, manage their health status, and visualize experiment timelines. It provides a dynamic dashboard to manage the life cycle of experiments, from planning to monitoring.
 
-The application is built using **Flask**, **SQLAlchemy**, and **Bootstrap**, providing a simple yet effective interface for managing animal experiments.
 
 ## Features
 
@@ -55,7 +54,7 @@ This will start a Flask development server on `http://127.0.0.1:5000/`.
 
 ## Usage
 
-1. **Start the Program**
+1. **Start the Program:**
    Run the script to start the application.
 
 2. **Plan Your Experiment**
