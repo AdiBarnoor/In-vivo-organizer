@@ -7,17 +7,33 @@ The **In Vivo Organizer** is a web-based application designed to assist research
 
 ## Features
 
-- **Dynamic Dashboard**: A live view of ongoing experiments, groups, and timelines with real-time updates.
-- **Experiment Planning**: Set up new experiments with groups, treatments, and timelines. Includes metadata like species, animal ID, treatments, etc.
-- **Animal Tracking**: Add animals individually or in bulk, assign them to experimental groups, and track their health status (e.g., "Sacrifice" for dead animals).
-- **Schedule Management**: Create schedules for interventions, measurements, and observations with calendar integration.
-- **Real-Time Updates**: Dynamic updates when changes are made to experiments or animals.
+- **Experiment Management**: Add, delete, and view experiments.
+- **Animal Management**: Add, modify, and delete animals associated with experiments.
+- **Animal Treatments**: Add treatments and view details of treatments for each animal.
+- **Event Scheduling**: Add and view events on the calendar for each experiment.
+- **Filtering**: Filter animals by species, age, weight, genotype, and status.
+
+## Project Structure
+
+Here’s how the project is organized:
+```bash
+your_project/
+│
+├── app.py # Main Flask application
+│
+├── templates/ # HTML templates for the app
+│ ├── index.html
+│ ├── add_experiment.html
+│ └── ...
+│ └── database.db # SQLite database (auto-created if not exists)
+```
 
 ## Requirements
 
 - `Python 3.6+` (Python 3.13 is currently not fully supported)
 - `Flask`
 - `Bootstrap` (for styling)
+- SQLite (no need to install)
 
 You can install the required dependencies using the following:
 
@@ -27,47 +43,28 @@ pip install -r requirements.txt
 ---
 
 ### Steps to Install
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/AdiBarnoor/in-vivo-organizer.git
-   cd in-vivo-organizer
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/your-project.git
+    cd your-project
+    ```
 
-   ```
+2. **Create a virtual environment**:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+    ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-3. Run the application:
-   ```bash
-   python app.py
-   ```
-This will start a Flask development server on `http://127.0.0.1:5000/`.
+3. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-4. Access the Web Application
-   Open your browser and go to the following address:
-   ```
-   http://127.0.0.1:5000
-   ```
----
-
-## Usage
-
-1. **Start the Program:**
-   Run the script to start the application.
-
-2. **Plan Your Experiment**
-   - Define experimental groups and variables.
-   - Set up timelines for interventions and observations.
-
-3. **Track Animals and Treatments**
-   - Log details of animal groups, including health and interventions.
-   - Monitor treatments and environmental conditions.
-
-4. **Collect and Analyze Data**
-   - Record observations and measurements.
-   - Generate graphs and reports for analysis and presentation.
+4. **Run the app**:
+    ```bash
+    python app.py
+    ```
+Visit `http://127.0.0.1:5000/` in your browser to see the app in action!
 
 ---
 
