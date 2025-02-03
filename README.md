@@ -33,7 +33,7 @@ your_project/
 - `Python 3.6+` (Python 3.13 is currently not fully supported)
 - `Flask`
 - `Bootstrap` (for styling)
-- SQLite (no need to install)
+- `SQLite` (no need to install)
 
 You can install the required dependencies using the following:
 
